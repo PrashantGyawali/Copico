@@ -1,0 +1,34 @@
+{
+    "name":"Copico",
+    "version":"1.0",
+    "description":"Simple Color Picker",
+    "manifest_version":3,
+    "icons":{
+        "16":"images/eyedropper16.png",
+        "48":"images/eyedropper48.png",
+        "128":"images/eyedropper128.png"
+    },
+    "permissions": [
+    "windows",
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+    ],
+    "action":{
+        "default_popup":"popup/popup.html"
+    },
+    "options_ui": {
+        "page": "options/options.html",
+        "open_in_tab": true
+      },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "commands": {
+    "openShortcut": {
+      "suggested_key": "Ctrl+Shift+K",
+      "description": "Start colorpicker"
+    }
+  }
+}

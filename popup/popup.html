@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./popup.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Color Picker</h1>
+        <div class="selectButtonWrapper">
+            <button class="selectButton">Pick Color</button>
+        </div>
+        <div class="selectedColor">
+            <h3>Selected Color:</h3>
+            <div class="colorData">
+                <input type="color" class="colorSample" id="colorInput">
+                <span id="colorValue">#000000</span>
+                <button id="colorFormat" data-colortype="0">hex</button>
+            </div>
+        </div>
+
+        <div id="colorHistory">
+            <h2>Color History</h2>
+            <div id="colorList">
+
+            </div>        
+        </div>
+        <button class="settingsButton"></button>
+    </div>
+    <script src="../utils/chroma.min.js"></script>
+    <script src="./popup.js"></script>
+</body>
+</html>

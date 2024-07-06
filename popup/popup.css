@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  width: 400px;
+  text-align: center;
+}
+
+.selectButton {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.selectButton:hover {
+  background-color: rgb(248, 248, 0);
+}
+
+
+.selectButtonWrapper {
+  margin: 0px 30px;
+}
+
+.settingsButton {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  margin: 0px;
+  background-image: url("../images/settings.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.settingsButton:hover {
+  cursor: pointer;
+  animation: rotateanim 3s linear infinite;
+}
+@keyframes rotateanim{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+#colorFormat {
+  background-color: aqua;
+  border: 1px solid rgb(0, 115, 210);
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: 5px;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 16px;
+}
+#colorFormat:hover {
+  background-color: rgb(0, 234, 255);
+}
+
+.selectedColor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.selectedColor > #colorValue {
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+.colorSample {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.colorData {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 60%;
+  max-width: 90%;
+}
+#colorValue {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#colorHistory {
+  display: none;
+}
+#colorList {
+  height: 200px;
+  overflow-y: auto;
+}
+.colorItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+.colorItem:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.colorValue {
+  margin-left: 20px;
+}
+.deleteButton {
+  color: rgb(0, 0, 0, 0.3);
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.deleteButton:hover {
+  background-color: rgb(255, 0, 0, 0.5);
+  color: white;
+}
+
