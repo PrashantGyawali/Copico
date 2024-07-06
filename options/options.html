@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h2>Color Picker</h2>
-    <h3>Settings:</h3>
-    <p>Please select your choice:</p>
+    <style>
+        p{
+            font-size: 18px;
+            margin: 2px;
+            font-weight: bold;
+        }
+        label{
+            font-size: 16px;
+        }
+        button{
+            font-size: 18px;
+        }
+    </style>
+    <h1>Color Picker</h1>
+    <h2>Settings:</h2>
     <form id="settings">
+        <p>Please select your choice:</p>
         <input type="radio" id="hide" name="colorPickerMethod" value="hide">
-        <label for="hide-popup">Hide popup when selecting color</label><br>
+        <label for="hide">Hide popup when selecting color</label><br>
         <input type="radio" id="close" name="colorPickerMethod" value="close">
-        <label for="close-popup">Close Popup when selecting color</label><br>
+        <label for="close">Close Popup when selecting color</label><br>
         <input type="radio" id="show" name="colorPickerMethod" value="show">
-        <label for="show-popup">Show Popup when selecting Color</label>
+        <label for="show">Show Popup when selecting Color</label>
         <br>
         <button type="submit">Save</button>
     </form>
