@@ -30,10 +30,12 @@ try {
 
 
 
-    chrome.contextMenus.create({
-    id: "colorpicker",
-    title: "Pick Color",
-    contexts: ['all']
+    chrome.runtime.onInstalled.addListener(() => {
+        chrome.contextMenus.create({
+            id: "colorpicker",
+            title: "Pick Color",
+            contexts: ['all']
+        });
     });
 
     // Open a new search tab when the user clicks a context menu
